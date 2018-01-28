@@ -14,7 +14,7 @@
     <bean id="localEntityManagerFactory"
           class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
           p:dataSource-ref="dataSource"
-          p:packagesToScan="com.tomasoft.genealogy.model">
+          p:packagesToScan="com.tomasoft.genealogy.entity">
         <property name="jpaVendorAdapter">
             <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
                 <property name="generateDdl" value="false"/>
