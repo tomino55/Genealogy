@@ -18,6 +18,6 @@ public class MainController {
 
     @RequestMapping(method = RequestMethod.GET, path = "/")
     public String helloWorld(){
-        return "helloWorld";
+        return "home";
     }
 }
