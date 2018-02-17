@@ -21,13 +21,13 @@
     <!-- Home Page -->
     <definition name="home" extends="base-definition">
         <put-attribute name="title" value="Home"/>
-        <put-attribute name="body" value="/WEB-INF/view/jsp/helloWorld.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/view/jsp/home.jsp"/>
     </definition>
 
     <!-- Login page -->
     <definition name="login" extends="empty-definition">
         <put-attribute name="title" value="Login" />
-        <put-attribute name="body" value="/WEB-INF/view/jsp/login.jsp" />
+        <put-attribute name="content" value="/WEB-INF/view/jsp/login.jsp" />
     </definition>
 
 </tiles-definitions>

@@ -8,7 +8,8 @@
        http://www.springframework.org/schema/security/spring-security.xsd">
 
     <http auto-config="true" use-expressions="true">
-        <intercept-url pattern="/" access="hasAnyAuthority('USER','ADMIN')"/>
+        <!--<intercept-url pattern="/" access="hasAnyAuthority('USER','ADMIN')"/>-->
+        <intercept-url pattern="/*" access="permitAll()"/>
         <form-login login-page="/login"
                         username-parameter="email"
                         password-parameter="password"
